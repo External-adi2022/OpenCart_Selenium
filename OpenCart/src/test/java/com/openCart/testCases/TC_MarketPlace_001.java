@@ -25,6 +25,12 @@ public class TC_MarketPlace_001 extends BaseClass {
 	public void NavitgateToMarketPlace() {
 		MarketPlace_Page marketPlace = new MarketPlace_Page(driver);
 		marketPlace.NavMarketPlace();
+		
+		if (driver.getTitle().equals("OpenCart - Marketplace")) {
+			Assert.assertTrue(true, "Marketplace Page");
+		} else {
+			Assert.assertTrue(false, "Not Marketplace Page");
+		}
 	}
 
 }
