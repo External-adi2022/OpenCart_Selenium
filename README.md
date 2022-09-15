@@ -1,2 +1,2 @@
-# OpenCart_Selenium
-Selenium project
+## OpenCart_Selenium
+#Testing using selenium framework
