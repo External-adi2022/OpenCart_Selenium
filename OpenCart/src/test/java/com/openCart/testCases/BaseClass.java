@@ -8,21 +8,23 @@ import org.testng.annotations.BeforeClass;
 import com.openCart.utilities.ReadConfig;
 
 public class BaseClass {
-    
+
 	ReadConfig readConfig = new ReadConfig();
-	
+
 	public String baseURL = readConfig.getApplicationURL();
+	public String fbCartText = readConfig.getSearchfbCart();
 	public static WebDriver driver;
-	
+
 	@BeforeClass
 	public void setup() {
 		System.setProperty("webdriver.chrome.driver", readConfig.getChromePath());
-		driver=new ChromeDriver();
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
 	}
-	
+
 	@AfterClass
 	public void tearDown() {
-		driver.quit();	
+		driver.quit();
 	}
 
 }
