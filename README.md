@@ -1,5 +1,5 @@
 # OpenCart_Selenium
-## Testing using selenium framework
+## Automation Testing using selenium framework of OpenCart website
 
 #URL of openCart website: https://www.opencart.com/
 
